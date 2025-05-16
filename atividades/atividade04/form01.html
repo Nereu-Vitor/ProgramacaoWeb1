@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Pré-Matrícula</title>
+</head>
+<body>
+    <form action="paginaDestino1.html" method="get" enctype="multipart/form-data">
+        
+        <center>
+        <h1>
+            Escola Virtual
+        </h1>
+        <h2>
+            Formulário de Pré-Matrícula
+        </h2>
+        </center>
+
+        <hr>
+
+        <fieldset>
+            <font size="4">
+                <b>Dados Pessoais:</b>
+            </font>
+            <br>
+
+            <center>
+                <Label for="nome">Nome do Aluno: </Label>
+                <input type="text" name="nome" id="nome">
+                <br>
+
+                <label>Nascimento (dd/mm/aaaa): </label>
+                <input type="text" size="1"><label>/</label>
+                <input type="text" size ="1"><label>/</label>
+                <input type="text" size="2">
+                <br>
+
+                <label for="nomeMae">Nome da Mãe: </label>
+                <input type="text" id="nomeMae">
+                <br>
+
+                <label for="nomePai">Nome do Pai: </label>
+                <input type="text" id="nomePai">
+                <br>
+
+                <label for="ddd">Telefone: DDD (<input type="text" size="1" name="ddd" id="ddd">)</label>
+                <label for="tel">Tel:</label>
+                <input type="text" size="7" id="tel" name="tel">
+                <labe for="ramal">Ramal:</label>
+                <input type="text" name="ramal" id="ramal" size="2">
+                <br>
+
+                <label for="email">E-Mail:</label>
+                <input type="email" name="email" id="email">
+            </center>
+        </fieldset>
+
+        <fieldset>
+            <font size="4">
+                <b>Informações de Matrícula:</b>
+            </font>
+            <br>
+
+            <table cellspacing="10">
+                <tr valign="top">
+                    <td>
+                        <label for="serie">Série:</label>
+                        <br>
+                        <select name="serie" id="serie">
+                            <option value="pe">Pré-escolar</option>
+                            <option value="ef1">Ensino Fundamental I</option>
+                            <option value="ef2">Ensino Fundamental II</option>
+                            <option value="em">Ensino Médio</option>
+                        </select>
+                        <pre></pre>
+                        
+                    </td>
+
+                    <td></td>
+
+                    <td></td>
+
+                    <td>
+                        
+                        <label for="turno">Turno:</label>
+                        <br>
+                        <input type="radio" name="turno" value="m" id="tM"><label for="tM">Manhã</label><br>
+                        <input type="radio" name="turno" value="t" id="tT"><label for="tT">Tarde</label><br>
+                        <input type="radio" name="turno" value="n" id="tN"><label for="tN">Noite</label>
+                    </td>
+
+                    <td></td>
+
+                    <td></td>
+
+                    <td></td>
+
+                    <td>
+                        <label for="atvExt">Atividades Extracurriculares:</label><br>
+                        <input type="checkbox" name="atvExt" id="i" value="i"><label for="i">Informática</label><br>
+                        <input type="checkbox" name="atvExt" id="m" value="m"><label for="m">Música</label><br>
+                        <input type="checkbox" name="atvExt" id="b" value="b"><label for="b">Ballet</label><br>
+                        <input type="checkbox" name="atvExt" id="p" value="p"><label for="p">Pintura</label><br>
+                        <input type="checkbox" name="atvExt" id="j" value="j"><label for="j">Judô</label><br>
+                        <input type="checkbox" name="atvExt" id="f" value="f"><label for="f">Futebol</label><br>
+                    </td>
+                </tr>               
+            </table>
+        </fieldset>
+
+        <center>
+            <input type="submit" value="Enviar Formulário">
+            <input type="reset" value="Limpar Campos">
+        </center>
+        
+    </form>
+</body>
+</html>
