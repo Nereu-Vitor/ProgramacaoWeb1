@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina 2</title>
+</head>
+<body>
+    <h1>
+        Página 2
+    </h1>
+    <a href="/index.html">Voltar</a>
+
+    <form action="/index.html" method="get" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Dados de autenticação</legend>
+            <label for="name">Nome completo: </label>
+            <br>
+        <input 
+            id="name"
+            type="text" 
+            name="username" 
+            placeholder="Insira seu nome..."
+        >
+        <br>
+        <br>
+        <label for="password">Senha: </label>
+        <br>
+        <input 
+            type="password" 
+            name="password" 
+            placeholder="Insira sua senha aqui..."
+        >
+        <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Turno</legend>
+            <input id="m" type="radio" name="curso" value="m">
+        <label for="m">Manhã</label>
+        <br>
+        <input type="radio" name="curso" value="t" id="t">
+        <label for="t">Tarde</label>
+        <br>
+        <input type="radio" name="curso" value="n" checked id="n">
+        <label for="n">Noite</label>
+        <br>
+        </fieldset>
+
+        
+        
+        <input type="checkbox" name="promo">Aceita promoção no e-mail?<br>
+        <br>
+        <input type="file" name="profilePhoto" ><br>
+
+        <label for="mensagem">Mensagem</label>
+        <br>
+        <textarea id="msg" cols="30" rows="10" name="mensagem" placeholder="Digite uma mensagem..."></textarea>
+        <br><br>
+
+        <label for="turno">Dfina o turno do curso: </label>
+        <br>
+        <select name="turno" id="turno" size="2" multiple>
+            <option value="m">Manhã</option>
+            <option value="t">Tarde</option>
+            <option value="n" selected>Noite</option>            
+        </select>
+        <br>
+    
+        <input type="hidden" name="id" value="1122312">
+        <input type="reset" value="Limpar o formulário">
+        <input type="submit" name="buttonSubmit" value="Enivar mensagem">
+
+        
+        
+    </form>
+</body>
+</html>
